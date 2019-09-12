@@ -3,6 +3,10 @@ description: personal website - sara gong
 logo: /assets/jpg/logo.jpg
 
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 
 # Exclude from processing.
