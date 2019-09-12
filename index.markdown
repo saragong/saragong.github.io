@@ -1,6 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+university of southern california '21  
+b.s. economics/math  
+b.a. philosophy
+
+conducting research on entrepreneurial decision-making at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. fascinated by problems at the intersection of policy, rationality, and uncertainty, particularly in development and behavioral economics.
+
+currently living in london.
+
+[resume](./assets/pdf/resume.pdf)
+
+[linkedin](https://www.linkedin.com/in/saragong/)
+
+[contact](mailto:saragong@usc.edu)
