@@ -1,30 +1,26 @@
-title: Sara Gong | Los Angeles, CA | Economics + Math + Philosophy at USC
-description: Conducting research on entrepreneurial decision-making at Columbia Business School. Former Congressional intern experienced in legislative issues, campaigns, and activism. Fascinated by problems at the intersection of policy, rationality, and uncertainty, particularly in development and behavioral economics.
+title: Sara Gong
+description: Undergrad majoring in economics, math, and philosophy at USC and conducting research on entrepreneurial decision-making at Columbia. Los Angeles, CA.
 logo: /assets/jpg/logo.jpg
 
+# variables for jekyll-seo-tag
+url: https://saragong.github.io/
+author: Sara Gong
+twitter:
+  username: notsaragong
+  card: summary
+google_site_verification: UA-147633665-1
+
+# use jekyll minimal theme with customizations
 theme: jekyll-theme-minimal
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock

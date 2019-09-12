@@ -11,9 +11,9 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include analytics.html %}
     {% feed_meta %}
-{% seo %}
+    {% seo %}
+    {% include analytics.html %}  
   </head>
   <body>
     <div class="wrapper">
@@ -21,7 +21,7 @@
         <h1><a href="{{ "/" | absolute_url }}">sara gong</a></h1>     
         {% include navigation.html %}
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="saragong.github.io" />
+          <img src="{{site.logo | relative_url}}" alt="logo for saragong.github.io" />
         {% endif %}
       </header>
       <section>
