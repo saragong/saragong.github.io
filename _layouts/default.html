@@ -16,18 +16,13 @@
     {% include analytics.html %}
   </head>
   <body>
+      {% include navigation.html %}
     <div class="wrapper">
       <header>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/">about</a></li>
-            <li><a href="/work.html">work</a></li>
-          </ul>
-        </nav>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="logo for saragong.github.io" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -46,7 +41,7 @@
 
       </section>
       <footer>
-        <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>. 
+        <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on github. 
           <a href="https://github.com/saragong/saragong.github.io">view source code</a></p>
       </footer>
     </div>
