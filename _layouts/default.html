@@ -17,6 +17,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="container">
           <header>
               <h1><a href="{{ "/" | absolute_url }}">sara gong</a></h1>     
               {% include navigation.html %}
@@ -27,6 +28,7 @@
           <section>
               {{ content }}
           </section>
+      </div>
         <footer>
           <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on github. 
           <a href="https://github.com/saragong/saragong.github.io">view source code</a></p>
