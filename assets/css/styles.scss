@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
-  padding:30px;
+  padding:20px 30px;
 }
 
 img {
@@ -42,7 +42,7 @@ h1 {
 // Full Width Styles
 
 .wrapper {
-  width:900px;
+  width:90%;
 }
 
 .container {
@@ -50,7 +50,8 @@ h1 {
   min-height:100vh;
   overflow:hidden;
   position:relative;
-  padding-bottom:30px;
+  padding:30px 50px;
+  border:1px solid #e0e0e0;
 }
 
 // Header Styles
@@ -124,15 +125,15 @@ section {
 // Footer
 
 footer {
-  position:absolute;
+  position:relative;
   bottom:0;
   font-size: 12px;
-  width:900px;
-  float:left;
+  width:100%;
+  text-align:right;
   border-top:1px solid #e5e5e5;
   height: 12px;
   padding:18px 0px 0px 0px;
-  margin:0 0 20px;
+  margin:0 auto;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
