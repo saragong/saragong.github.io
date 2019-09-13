@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Sara Gong - Work
 image: /assets/jpg/logo.jpg
 permalink: /work/
