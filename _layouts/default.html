@@ -16,23 +16,31 @@
     {% include analytics.html %}  
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">sara gong</a></h1>     
-        {% include navigation.html %}
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="logo for saragong.github.io" />
-        {% endif %}
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-        <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on github. 
+    <div class="wrapper" id="container">
+      <!--<div id="container">-->
+          <div style="float:left">
+              <header>
+                <h1><a href="{{ "/" | absolute_url }}">sara gong</a></h1>     
+                {% include navigation.html %}
+                {% if site.logo %}
+                  <img src="{{site.logo | relative_url}}" alt="logo for saragong.github.io" />
+                {% endif %}
+              </header>
+          </div>
+          <div style="float:right">
+              <section>
+        
+                {{ content }}
+            
+              </section>
+          </div>
+      <!--</div>-->
+      <div style="float:left">
+        <footer>
+          <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on github. 
           <a href="https://github.com/saragong/saragong.github.io">view source code</a></p>
-      </footer>
+        </footer>
+      </div>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}

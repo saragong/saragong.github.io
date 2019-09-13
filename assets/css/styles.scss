@@ -2,7 +2,37 @@
 ---
 @import "{{ site.theme }}";
 
-// custom styles
+// custom style for background
+body {
+  background-color: #f8efe9;
+}
+
+#container {
+  //width:90%;
+  //height:90%;
+  //padding:40px;
+  //margin:0 auto;
+  background-color: #fff;
+}
+
+// remove float
+header, section, footer {
+  float:none;
+}
+
+// custom style for footer
+footer {
+  width:270px;
+  position:fixed;
+  bottom:20px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+// custom style for navbar
 
 header ul {
   border: none;
@@ -71,13 +101,6 @@ header ul a strong {
 
   header {
     padding-right:320px;
-  }
-
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
   }
 
   header a small {
