@@ -10,9 +10,6 @@ twitter:
   card: summary
 google_site_verification: UA-147633665-1
 
-# use jekyll minimal theme with customizations
-theme: jekyll-theme-minimal
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
