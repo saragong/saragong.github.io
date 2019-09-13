@@ -1,6 +1,7 @@
 title: Sara Gong
 description: Undergrad majoring in economics, math, and philosophy at USC and conducting research on entrepreneurial decision-making at Columbia. Los Angeles, CA.
 logo: /assets/jpg/logo.jpg
+theme: jekyll-theme-minimal
 
 # variables for jekyll-seo-tag
 url: https://saragong.github.io/

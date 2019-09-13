@@ -16,23 +16,7 @@
     {% include analytics.html %}  
   </head>
   <body>
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header class="inner">
-      <!-- NAVIGATION -->
-        <nav>
-            <ul>
-                <li>about</li>
-                <li>work</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-  </div>
-
-    <!--old code-->
     <div class="wrapper">
-      <div id="container"></div>
           <header>
               <h1><a href="{{ "/" | absolute_url }}">sara gong</a></h1>     
               {% include navigation.html %}
@@ -43,13 +27,10 @@
           <section>
               {{ content }}
           </section>
-      </div>
-      <div style="float:left">
         <footer>
           <p>this website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> on github. 
           <a href="https://github.com/saragong/saragong.github.io">view source code</a></p>
         </footer>
-      </div>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
