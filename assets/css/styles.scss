@@ -16,7 +16,7 @@ html, body {
 body {
   color:#727272;
   background-color: #fff;
-  font-size: 16px/1.5;
+  font-size: 16px;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
   padding:30px;
@@ -24,6 +24,19 @@ body {
 
 img {
   padding-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1 {
+  font-size:36px;
 }
 
 // Full Width Styles
@@ -73,7 +86,7 @@ header li:last-child a {
 header ul a {
   text-decoration: none;
   line-height:1;
-  font-size:16px;
+  font-size:20px;
   color:#267CB9;
   display:inline;
   text-align:left;
@@ -105,7 +118,7 @@ header ul a strong {
 section {
   width:500px;
   float:right;
-  padding-bottom:50px;
+  padding-bottom:40px;
 }
 
 // Footer
@@ -113,7 +126,7 @@ section {
 footer {
   position:absolute;
   bottom:0;
-  font-size: 10px;
+  font-size: 12px;
   width:900px;
   float:left;
   border-top:1px solid #e5e5e5;
