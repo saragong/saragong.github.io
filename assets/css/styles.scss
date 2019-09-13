@@ -18,7 +18,7 @@ html {
     font-size: 14px/1.5;
     font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight:400;
-    padding:50px;
+    padding:5px 50px 30px 50px;
     height:100%;
   }
   
@@ -143,8 +143,9 @@ html {
   
   header ul {
     border:none;
+    background:none;
     list-style:none;
-    height:40px;
+    height:20px;
     padding:0;
     width:270px;
   }
@@ -153,7 +154,7 @@ html {
     border:none;
     width:90px;
     float:left;
-    height:40px;
+    height:20px;
   }
 
   header li:first-child a {
@@ -170,14 +171,19 @@ html {
     font-size:16px;
     color:#267CB9;
     display:block;
-    text-align:center;
+    text-align:left;
     padding-top:6px;
-    height:34px;
+    height:20px;
+    width:50%;
   }
   
   header ul a:hover, header ul a:focus {
     color:#069;
     font-weight: bold;
+  }
+
+  header ul a:active {
+    background-color:none;
   }
   
   strong {
@@ -205,7 +211,7 @@ html {
     width:270px;
     float:left;
     position:fixed;
-    bottom:50px;
+    bottom:30px;
     -webkit-font-smoothing:subpixel-antialiased;
   }
   
