@@ -50,13 +50,13 @@ h1 {
   min-height:100vh;
   overflow:hidden;
   position:relative;
-  padding-bottom:50px;
+  padding-bottom:30px;
 }
 
 // Header Styles
 
 header {
-  width:270px;
+  width:300px;
 }
 
 header ul {
@@ -130,7 +130,8 @@ footer {
   width:900px;
   float:left;
   border-top:1px solid #e5e5e5;
-  padding:20px 0 0 0;
+  height: 12px;
+  padding:18px 0px 0px 0px;
   margin:0 0 20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
