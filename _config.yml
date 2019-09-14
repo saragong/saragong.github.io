@@ -1,24 +1,14 @@
-title: Sara Gong
-description: Undergrad majoring in economics, math, and philosophy at USC and conducting research on entrepreneurial decision-making at Columbia. Los Angeles, CA.
-logo: /assets/jpg/logo.jpg
-theme: jekyll-theme-minimal
+# Site settings
+title: Twenty Blog
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://locahost:4000" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# variables for jekyll-seo-tag
-url: https://saragong.github.io/
-author: Sara Gong
-twitter:
-  username: notsaragong
-  card: summary
-google_site_verification: UA-147633665-1
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
+# Build settings
+markdown: kramdown
