@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*********************************
-With Customizations
+Styles adapted from Twenty by HTML5 UP!
 **************************************/
 
 /* Basic */
@@ -105,7 +105,7 @@ With Customizations
 	}
 
 	a:hover, a:focus {
-		color:#069;
+		color:#78b3dd;
 	  }
 
 /* Section/Article */
