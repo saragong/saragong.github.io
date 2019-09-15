@@ -1,14 +1,23 @@
-# Site settings
-title: Twenty Blog
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Sara Gong
+email: saragong@usc.edu
+description: > 
+Economics, math, and philosophy at USC. Conducting research on entrepreneurial decision-making at Columbia Business School. Los Angeles, California.
+baseurl: ""
+url: "https://saragong.github.io/"
+twitter_username: notsaragong
+github_username:  saragong
+author: Sara Gong
 
-# Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
