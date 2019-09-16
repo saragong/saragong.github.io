@@ -46,12 +46,16 @@
 
     <!-- HEADER -->		
     <header id="header">
-      <h1 id="logo" style="text-transform:lowercase"><a href="/">hello</a></h1>
+      <h1 id="logo" style="text-transform:lowercase">
+        <a href="/" onMouseOver="this.style.color='{{ hover_color }}'"
+        onMouseOut="this.style.color='{{ text_color }}'">hello</a></h1>
       <nav id="nav">
         <ul>
           <li style="text-transform:lowercase"><a href="/#about">about</a></li>
-          <li style="text-transform:lowercase"><a href="/#work">work</a></li>
-                      <li style="text-transform:lowercase"><a href="/#connect">connect</a></li>
+          {% if page.portfolio %}
+          <li style="text-transform:lowercase"><a href="/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
+          {% endif %}
+          <li style="text-transform:lowercase"><a href="/#connect">connect</a></li>
         </ul>
       </nav>
     </header>
@@ -74,7 +78,7 @@
 
     <div class="page-content">
 
-        <article id="main">
+        <article id="main" style="color: {{ text_color }}">
             <!-- section: about -->
               <header class="special container" id="about">
                 <h2 ><strong>about</strong></h2>
@@ -86,6 +90,9 @@
                   {% endif %}
                   {% if page.about_subsubtitle %}
                   <h5>{{ page.about_subsubtitle}}</h5>
+                  {% endif %}
+                  {% if page.about_subsubsubtitle %}
+                  <h5>{{ page.about_subsubsubtitle}}</h5>
                   {% endif %}
                   <p style="padding: 0 1em; margin-top:1em; text-align:center"> {{ page.about }}</p>
       
@@ -102,12 +109,31 @@
               </section>    
 
             <!-- section: work-->
-            <section class="wrapper style3 container special" id="work">
+            {% if page.portfolio %}
+            <section class="wrapper style3 container special" id="{{ page.portfolio }}">
 					      <header class="special">
-                  <h2><strong>work</strong></h2>
+                  <h2><strong>{{ page.portfolio }}</strong></h2>
                 </header>
-                {{ content }}
+                {% for categories in site.data[page.portfolio][page.portfolio] %}
+                <div class="row">
+
+                          <div class="12u item">
+                              <h3 style="margin-bottom:1em"><u>{{ categories.category}}</u></h3>
+                          </div>
+
+                          {% for items in categories.items %}
+                          <div class="6u item">
+                            <section>
+                                {% include {{ items.item }} %}
+                            </section>
+                          </div>
+                          {% endfor %}
+                </div>
+
+                {% endfor %}
+
             </section>
+            {% endif %}
       </article>
 
         <!-- section: connect -->
