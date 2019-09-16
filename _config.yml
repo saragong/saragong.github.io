@@ -23,4 +23,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+# theme variables
+github_homepage: "https://github.com/saragong/saragong.github.io"
 

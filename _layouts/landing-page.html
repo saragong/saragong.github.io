@@ -57,20 +57,14 @@
     <!-- BANNER -->		
     <section id="banner" style="background-attachment: scroll, scroll, scroll, fixed;">
 
-  <!--
-      ".inner" is set up as an inline-block so it automatically expands
-      in both directions to fit whatever's inside it. This means it won't
-      automatically wrap lines, so be sure to use line breaks where
-      appropriate (<br />).
-  -->
-  <div class="inner">
+        <div class="inner">
 
-      <h2 style="font-size:3em; text-transform:lowercase">sara gong</h2>
-      <p style="text-transform:lowercase; font-size:1.1em">part-time economist, full-time dreamer</p>
+            <h2 style="font-size:3em; text-transform:lowercase">{{ page.banner_title }}</h2>
+            <p style="text-transform:lowercase; font-size:1.1em">{{ page.banner_subtitle }}</p>
+      
+        </div>
 
-  </div>
-
-</section>
+    </section>
 
 <!--CONTENT-->
 
@@ -82,7 +76,7 @@
     <footer id="footer">
 
     <ul class="copyright">
-        <li>this website is maintained by <a href="https://github.com/saragong">sara gong</a> on github</li>
+        <li>this website is maintained by <a href="{{ site.github_homepage }}">sara gong</a> on github</li>
         <li><a href="https://github.com/saragong/saragong.github.io">view source code</a></li>
     </ul>
 

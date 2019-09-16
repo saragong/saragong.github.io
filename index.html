@@ -2,6 +2,14 @@
 layout: landing-page
 title: Sara Gong
 description: Economics, math, and philosophy at USC. Conducting research on entrepreneurial decision-making at Columbia Business School. Los Angeles, California.
+banner_title: sara gong
+banner_subtitle: part-time economist, full-time dreamer
+about: >
+  las vegas native. currently studying at the london school of economics and conducting research at columbia business school. 
+  former congressional intern experienced in legislative issues, campaigns, and activism. fascinated by problems at the intersection 
+  of public policy, rationality, and uncertainty.
+resume: "/assets/pdf/resume.pdf"
+work: papers, projects
 ---		
 		<!-- Main -->
 			<article id="main">
@@ -10,7 +18,7 @@ description: Economics, math, and philosophy at USC. Conducting research on entr
 					<h2><strong>about</strong></h2>
 				</header>
 				<section class="special container">
-					<h5 style="padding: 0 1em">currently studying at the london school of economics and conducting research at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. fascinated by problems at the intersection of public policy, rationality, and uncertainty. las vegas native.</h5>
+					<h5 style="padding: 0 1em"> {{ page.about }}</h5>
 
 					<!-- first section: education and resume -->
 					<section class="wrapper style1 container special">
@@ -19,7 +27,7 @@ description: Economics, math, and philosophy at USC. Conducting research on entr
 							<h3 style="margin-bottom:2em">b.a. philosophy</h3>
 							<footer class="major">
 									<ul class="buttons">
-										<li><a href="/assets/pdf/resume.pdf" class="button">resume</a></li>
+										<li><a href="{{ page.resume }}" class="button">resume</a></li>
 									</ul>
 								</footer>
 					</section>
