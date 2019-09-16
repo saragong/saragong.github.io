@@ -58,13 +58,13 @@
 
     <!-- BANNER -->		
     <section id="banner" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
-        url('{{ page.background_image }}'); background-attachment: scroll, fixed;"
+        url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
         {% endif %}>
 
         <div class="inner">
 
-            <h2 style="font-size:3em; text-transform:lowercase">{{ page.banner_title }}</h2>
-            <p style="text-transform:lowercase; font-size:1.1em">{{ page.banner_subtitle }}</p>
+            <h2 style="font-size:3em; text-transform:none">{{ page.banner_title }}</h2>
+            <p style="text-transform:none;">{{ page.banner_subtitle }}</p>
       
         </div>
 
@@ -73,12 +73,49 @@
 <!--CONTENT-->
 
     <div class="page-content">
-        {{ content }}
+
+        <article id="main">
+            <!-- section: about -->
+              <header class="special container" id="about">
+                <h2 ><strong>about</strong></h2>
+              </header>
+
+              <section class="special container">
+                  {% if page.about_subtitle %}
+                  <h3>{{ page.about_subtitle}}</h3>
+                  {% endif %}
+                  {% if page.about_subsubtitle %}
+                  <h5>{{ page.about_subsubtitle}}</h5>
+                  {% endif %}
+                  <p style="padding: 0 1em; margin-top:1em; text-align:center"> {{ page.about }}</p>
+      
+                  <!-- button -->
+                  {% if page.about_button %}
+                  <section class="wrapper style1 container special">
+                        <footer class="major" style="margin-top:1em">
+                            <ul class="buttons">
+                              <li><a href="{{ page.about_button }}" class="button">{{ page.about_button_label }}</a></li>
+                            </ul>
+                        </footer>
+                  </section>
+                {% endif %}      
+              </section>    
+
+            <!-- section: work-->
+            <section class="wrapper style3 container special" id="work">
+					      <header class="special">
+                  <h2><strong>work</strong></h2>
+                </header>
+                {{ content }}
+            </section>
+      </article>
 
         <!-- section: connect -->
-			<section class="cta" id="connect" style="background-attachment: scroll, scroll, scroll, fixed;">
+			<section class="cta" id="connect" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
+      url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+      {% endif %}>
 			
-          <header>
+          <header class="major">
             <h2>connect</h2>
           </header>
           <footer style="margin-bottom:8em">
@@ -98,14 +135,20 @@
     <!-- Footer -->
     <footer id="footer">
 
+        <ul class="icons">
+            {% if site.twitter_username %}
+            <li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            {% endif %}
+            {% if site.facebook_username %}
+            <li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+            {% endif %}
+            {% if site.github_username %}
+            <li><a href="https://github.com/{{ site.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            {% endif %}
+        </ul>
+
     <ul class="copyright">
-        <li>this website is maintained by
-          {% if site.github_username %}
-          <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> on github
-          {% else %}
-          {{ site.author}}
-          {% endif %}
-        </li>
+        <li>this website is maintained by {{ site.author}}</li>
         <li><a href="https://github.com/saragong/saragong.github.io">view source code</a></li>
     </ul>
 
