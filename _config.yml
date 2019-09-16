@@ -7,7 +7,9 @@ baseurl: ""
 url: "https://saragong.github.io/"
 twitter_username: notsaragong
 github_username:  saragong
-author: Sara Gong
+author: sara gong
+email: saragong@usc.edu
+linkedin: saragong
 
 markdown: kramdown
 
@@ -22,7 +24,4 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-
-# theme variables
-github_homepage: "https://github.com/saragong/saragong.github.io"
 

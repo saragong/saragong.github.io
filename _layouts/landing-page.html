@@ -9,7 +9,9 @@
     <meta name="keywords" content="" />
 
     <!--favicon-->
-    <link rel="icon" href="/assets/ico/favicon.ico" type="image/x-icon" />
+    {%if page.title %}
+    <link rel="icon" href= "{{ page.favicon }}" type="image/x-icon" />
+    {% endif %}
 
     <!--google analytics-->
     <meta name="google-site-verification" content="_ingfwzKGk0RIDArHk6VZh4qH4lzTUx2vHb7jclEpTw" />
@@ -70,13 +72,38 @@
 
     <div class="page-content">
         {{ content }}
+
+        <!-- section: connect -->
+			<section class="cta" id="connect" style="background-attachment: scroll, scroll, scroll, fixed;">
+			
+          <header>
+            <h2>connect</h2>
+          </header>
+          <footer style="margin-bottom:8em">
+              {% if page.title %}
+            <ul class="buttons">
+              <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="button">linkedin</a></li>
+            </ul>
+              {% endif %}
+            <ul class="buttons">
+              <li><a href="mailto:{{ site.email }}" class="button">contact</a></li>
+            </ul>
+          </footer>
+        
+        </section>
     </div>
 
     <!-- Footer -->
     <footer id="footer">
 
     <ul class="copyright">
-        <li>this website is maintained by <a href="{{ site.github_homepage }}">sara gong</a> on github</li>
+        <li>this website is maintained by
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> on github
+          {% else %}
+          {{ site.author}}
+          {% endif %}
+        </li>
         <li><a href="https://github.com/saragong/saragong.github.io">view source code</a></li>
     </ul>
 
