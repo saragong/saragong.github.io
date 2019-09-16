@@ -791,12 +791,12 @@ Styles adapted from Twenty by HTML5 UP!
 	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/background.svg"), url("images/background.svg"), url("images/overlay.png"), url("../images/background.jpeg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-attachment: scroll, fixed;
+		background-color: transparent;
+		background-image: url("images/background.svg"), url("../images/background.jpeg");
+		background-position: bottom center, top center;
+		background-repeat: no-repeat;
+		background-size: 25em, cover;
 		color: white;
 		cursor: default;
 		padding: 8em 0;
@@ -888,7 +888,7 @@ Styles adapted from Twenty by HTML5 UP!
 
 	.cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
+		background-color: none;
 		background-image: url("images/background.svg"), url("images/background.svg"), url("images/overlay.png"), url("../images/background.jpeg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;

@@ -9,7 +9,7 @@
     <meta name="keywords" content="" />
 
     <!--favicon-->
-    {%if page.title %}
+    {% if page.title %}
     <link rel="icon" href= "{{ page.favicon }}" type="image/x-icon" />
     {% endif %}
 
@@ -57,7 +57,9 @@
     </header>
 
     <!-- BANNER -->		
-    <section id="banner" style="background-attachment: scroll, scroll, scroll, fixed;">
+    <section id="banner" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
+        url('{{ page.background_image }}'); background-attachment: scroll, fixed;"
+        {% endif %}>
 
         <div class="inner">
 
