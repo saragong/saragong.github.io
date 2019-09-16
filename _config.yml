@@ -9,8 +9,6 @@ github_username:  saragong
 author: sara gong
 linkedin: saragong
 
-markdown: kramdown
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
