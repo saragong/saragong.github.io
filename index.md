@@ -6,7 +6,9 @@ image: /images/logo.jpeg
 
 favicon: /assets/ico/favicon.ico
 
+twitter_username: notsaragong
 github_username:  saragong
+linkedin: saragong
 
 banner_title: sara gong
 banner_subtitle: part-time economist, full-time dreamer
