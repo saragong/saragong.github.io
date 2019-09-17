@@ -9,7 +9,7 @@ favicon: /assets/ico/favicon.ico
 github_username:  saragong
 
 banner_title: sara gong
-banner_subtitle: part-time economist, part-time programmer, full-time dreamer
+banner_subtitle: part-time economist, full-time dreamer
 
 about_button: /assets/pdf/resume.pdf
 about_button_label: resume
