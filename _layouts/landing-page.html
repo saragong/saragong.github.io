@@ -3,7 +3,7 @@
 
   <!--HEAD-->
   <head>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="" />
@@ -13,14 +13,10 @@
     <link rel="icon" href= "{{ page.favicon }}" type="image/x-icon" />
     {% endif %}
 
-    <!--google analytics-->
-    <meta name="google-site-verification" content="_ingfwzKGk0RIDArHk6VZh4qH4lzTUx2vHb7jclEpTw" />
-    
     <!--jekyll plugins-->
-    {% feed_meta %}
-    {% seo %}
+    {%- feed_meta -%}
+    {%- seo -%}
 
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.dropotron.min.js"></script>
     <script src="/js/jquery.scrolly.min.js"></script>
@@ -34,8 +30,6 @@
         <link rel="stylesheet" href="/css/style-wide.css" />
         <link rel="stylesheet" href="/css/style-noscript.css" />
     </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
     <meta name="viewport" content="width=device-width">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -54,14 +48,17 @@
           {% if page.portfolio %}
           <li style="text-transform:lowercase"><a href="/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
           {% endif %}
-          <li style="text-transform:lowercase"><a href="/#connect">connect</a></li>
+          {% if page.cta %}
+          <li style="text-transform:lowercase"><a href="/#{{ page.cta }}"> {{ page.cta }} </a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>
 
     <!-- BANNER -->		
-    <section id="banner" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
-        url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+    <section id="banner" 
+    {% if page.background_image %}
+    style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
         {% endif %}>
 
         <div class="inner">
@@ -77,28 +74,21 @@
 
     <div class="page-content">
 
-        <article id="main" style="color: {{ text_color }}">
+        <article id="main">
             <!-- section: about -->
               <header class="special container" id="about">
                 <h2 ><strong>about</strong></h2>
               </header>
 
-              <section class="special container">
-                  {% if page.about_subtitle %}
-                  <h3>{{ page.about_subtitle}}</h3>
-                  {% endif %}
-                  {% if page.about_subsubtitle %}
-                  <h5>{{ page.about_subsubtitle}}</h5>
-                  {% endif %}
-                  {% if page.about_subsubsubtitle %}
-                  <h5>{{ page.about_subsubsubtitle}}</h5>
-                  {% endif %}
-                  <p style="padding: 0 1em; margin-top:1em; text-align:center"> {{ page.about }}</p>
+              <section class="special container" style="margin-bottom:10em">
+
+                  <div style="padding: 0 1em; text-align:center"> 
+                    {{ content }}</div>
       
                   <!-- button -->
                   {% if page.about_button %}
                   <section class="wrapper style1 container special">
-                        <footer class="major" style="margin-top:1em">
+                        <footer class="major">
                             <ul class="buttons">
                               <li><a href="{{ page.about_button }}" class="button">{{ page.about_button_label }}</a></li>
                             </ul>
@@ -113,17 +103,22 @@
 					      <header class="special">
                   <h2><strong>{{ page.portfolio }}</strong></h2>
                 </header>
+                <p>{{ page.portfolio_description }}</p>
                 {% for categories in site.data[page.portfolio][page.portfolio] %}
                 <div class="row">
 
-                          <div class="12u item">
-                              <h3 style="margin-bottom:2em"><u>{{ categories.category}}</u></h3>
+                          <div class="12u">
+                              <h3 style="margin-bottom:2em; font-size:1.25em"><strong>{{ categories.category}}</strong></h3>
                           </div>
 
                           {% for items in categories.items %}
                           <div class="6u item">
                             <section>
-                                {% include {{ items.item }} %}
+                              <div class="image featured">
+                                  <img src="{{ items.image }}" alt="" />
+                              </div>
+
+                              {% include {{ items.item }} %}
                             </section>
                           </div>
                           {% endfor %}
@@ -135,46 +130,50 @@
             {% endif %}
       </article>
 
-        <!-- section: connect -->
-			<section class="cta" id="connect" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
-      url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+        <!-- section: cta -->
+        {% if page.cta %}
+      <section class="cta" id="{{ page.cta }}" 
+      {% if page.background_image %}
+      style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
       {% endif %}>
 			
           <header class="major">
-            <h2>connect</h2>
+            <h2>{{ page.cta }}</h2>
           </header>
+          {% if page.cta %}
+          <p style="padding: 0em 1em; text-align: center">{{ page.cta_description }}</p>
+          {% endif %}
           <footer style="margin-bottom:8em">
-              {% if page.title %}
+              {% if page.cta_button %}
             <ul class="buttons">
-              <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="button">linkedin</a></li>
+              <li><a href="{{ page.cta_button }}" class="button">{{ page.cta_button_label }}</a></li>
             </ul>
               {% endif %}
-            <ul class="buttons">
-              <li><a href="mailto:{{ site.email }}" class="button">contact</a></li>
-            </ul>
           </footer>
         
         </section>
+        {% endif %}
     </div>
 
     <!-- Footer -->
     <footer id="footer">
 
         <ul class="icons">
-            {% if site.twitter_username %}
-            <li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            {% if page.twitter_username %}
+            <li><a href="https://twitter.com/{{ page.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
             {% endif %}
-            {% if site.facebook_username %}
-            <li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+            {% if page.facebook_username %}
+            <li><a href="https://www.facebook.com/{{ page.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
             {% endif %}
-            {% if site.github_username %}
-            <li><a href="https://github.com/{{ site.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            {% if page.github_username %}
+            <li><a href="https://github.com/{{ page.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
             {% endif %}
         </ul>
 
     <ul class="copyright">
         <li>this website is maintained by {{ site.author}}</li>
-        <li><a href="https://github.com/saragong/saragong.github.io">view source code</a></li>
+        <li>design: <a href="https://saragong.github.io/hello/"><strong>hello</strong></a> for github pages</li>
+        <li>adapted from <a href="https://html5up.net/twenty"><strong>Twenty</strong></a> by HTML5 Up</li>
     </ul>
 
 </footer>
