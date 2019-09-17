@@ -25,6 +25,9 @@ cta: connect
 cta_button: mailto:saragong@usc.edu
 cta_button_label: contact
 
+# variables for jekyll-seo-tag
+image: /images/logo.jpeg
+
 ---
 
 ### university of southern california ‘21
