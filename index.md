@@ -7,6 +7,7 @@ image: /images/logo.jpeg
 favicon: /assets/ico/favicon.ico
 
 twitter_username: notsaragong
+facebook_username: notsaragong
 github_username:  saragong
 linkedin: saragong
 
