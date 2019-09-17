@@ -30,4 +30,6 @@ cta_button_label: contact
 ### university of southern california ‘21
 #### b.s. economics and math | b.a. philosophy
 
-las vegas native. currently studying at the london school of economics and conducting research at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. fascinated by problems at the intersection of public policy, rationality, and uncertainty.
+las vegas native. currently studying at the london school of economics and conducting research at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. i'm fascinated by problems at the intersection of public policy, rationality, and uncertainty.  
+
+you can also find me moonlighting as a [developer](https://github.com/saragong).
