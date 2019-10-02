@@ -22,6 +22,7 @@ portfolio: work
 background_image: /images/background.jpeg
 
 cta: connect
+cta_subtitle: please email me for any inquiries.
 cta_button: mailto:saragong@usc.edu
 cta_button_label: contact
 
@@ -30,9 +31,9 @@ image: /images/logo.jpeg
 
 ---
 
-### university of southern california ‘21
-#### b.s. economics and math | b.a. philosophy
+## university of southern california ‘21
+### b.s. economics and math | b.a. philosophy
 
 las vegas native. currently studying at the london school of economics and conducting research at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. i'm fascinated by problems at the intersection of public policy, rationality, and uncertainty.  
 
-you can also find me moonlighting as a [developer](https://github.com/saragong).
+you can also find me moonlighting as a [programmer](https://github.com/saragong).
