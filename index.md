@@ -12,7 +12,7 @@ linkedin: saragong
 google_analytics: UA-147633665-1
 
 banner_title: sara gong
-banner_subtitle: part-time economist, full-time dreamer
+banner_subtitle: economics, math, philosophy
 
 about_button: /assets/pdf/resume.pdf
 about_button_label: resume
