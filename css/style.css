@@ -105,6 +105,11 @@ Custom Styles Adapted from Twenty by HTML5 Up
 		padding: 1em 0 1em 2em;
 	}
 
+	html {
+		visibility: visible;
+		opacity: 1;
+	}
+
 /* Section/Article */
 
 	section.special, article.special {
