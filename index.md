@@ -17,22 +17,11 @@ banner_subtitle: economics, math, and philosophy at USC
 about_button: /assets/pdf/resume.pdf
 about_button_label: resume
 
-portfolio: work
 
 background_image: /images/background.jpeg
 
-cta: connect
-cta_description: please email me for any inquiries.
-cta_button: mailto:saragong@usc.edu
-cta_button_label: contact
 
 # variables for jekyll-seo-tag
 image: /images/logo.jpeg
 
 ---
-
-### university of southern california ‘21 <br/> b.s. economics and math | b.a. philosophy
-
-las vegas native. currently studying at the london school of economics and conducting research at columbia business school. former congressional intern experienced in legislative issues, campaigns, and activism. i'm fascinated by problems at the intersection of public policy, rationality, and uncertainty.  
-
-you can also find me moonlighting as a [programmer](https://github.com/saragong).
