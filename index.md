@@ -17,7 +17,6 @@ banner_subtitle: los angeles, california
 about_button: /assets/pdf/resume.pdf
 about_button_label: resume
 
-
 background_image: /images/background.jpeg
 
 
