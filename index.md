@@ -27,4 +27,4 @@ image: /images/logo.jpeg
 
 ### university of southern california ‘21  
 
-### b.s. economics and math | b.a. philosophy
+### b.s. economics and math    |    b.a. philosophy
